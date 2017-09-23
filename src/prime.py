@@ -2,7 +2,6 @@
 Contains the Prime class which contains methods for checking prime numbers
 """
 
-
 from math import ceil
 
 if __name__ == '__main__':
@@ -13,7 +12,7 @@ class Prime:
     """Contains methods for checking primes"""
     @staticmethod
     def is_prime(number):
-        """Retruns true if number is a prime. Else false"""
+        """Returns true if number is a prime. Else false"""
         if number == 2:
             return True
         elif number <= 1 or (number > 2 and number % 2 == 0) or \
