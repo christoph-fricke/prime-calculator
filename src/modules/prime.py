@@ -16,7 +16,8 @@ class Prime:
         """Retruns true if number is a prime. Else false"""
         if number == 2:
             return True
-        elif number == 1 or (number > 2 and number % 2 == 0):
+        elif number <= 1 or (number > 2 and number % 2 == 0) or \
+                not isinstance(number, int):
             return False
 
         for divisor in range(3, ceil(number**(1 / 2)), 2):
