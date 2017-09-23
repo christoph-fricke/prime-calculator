@@ -1,3 +1,7 @@
 # Ignores pycache
 __pycache
 *.pyc
+
+# Ignores IDES and VS Code folders
+.vscode
+.idea
